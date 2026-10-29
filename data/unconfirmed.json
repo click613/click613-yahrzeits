@@ -1,8 +1,8 @@
 {
  "title": "Click613 Yahrzeits - UNCONFIRMED",
- "imported": "2026-10-29T04:24:01Z",
+ "imported": "2026-10-29T04:36:23Z",
  "note": "Single-source or conflicting names. NOT shown on the calendar or in the API lists until a second source confirms them; then move the entry to yahrzeits.json.",
- "count": 1749,
+ "count": 1746,
  "dates": {
   "1-Tishrei": [
    {
@@ -3628,92 +3628,12 @@
   ],
   "19-Cheshvan": [
    {
-    "name_he": "רבי שלמה זלקינד לנדרס",
-    "name_en": "R' Shlomo Zalkind Landers",
-    "year_heb": "5723",
-    "year": "1962",
-    "who": "First chief rabbi of Ramat Gan, serving 36 years",
-    "sources": [
-     {
-      "name": "he.wikipedia date page י\"ט בחשוון",
-      "url": "https://he.wikipedia.org/wiki/%D7%99%22%D7%98_%D7%91%D7%97%D7%A9%D7%95%D7%95%D7%9F"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "conflicting date in Wikidata",
-    "notes": [
-     "Wikidata gives death date 1962-10-16 which is a different Hebrew date"
-    ]
-   },
-   {
-    "name_he": "רבי נפתלי יצחק סג״ל",
-    "name_en": "R' Naftali Yitzchak Segal, author of Naftali Seva Ratzon",
-    "year_heb": "5316",
-    "year": "1555",
-    "who": "Author of the sefer Naftali Seva Ratzon",
-    "sources": [
-     {
-      "name": "torahtots.com This Month in Jewish History: 19 Cheshvan",
-      "url": "https://www.torahtots.com/timecapsule/thismonth/cheshvan.htm"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "only one source found"
-   },
-   {
-    "name_he": "רבי יצחק אברהם וולרשטיין ממינסק",
-    "name_en": "R' Yitzchak Avraham Wallerstein of Minsk",
-    "year_heb": "5536",
-    "year": "1775",
-    "who": "Brother of the Shaagas Aryeh, rav in Minsk",
-    "sources": [
-     {
-      "name": "torahtots.com This Month in Jewish History: 19 Cheshvan",
-      "url": "https://www.torahtots.com/timecapsule/thismonth/cheshvan.htm"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "only one source found"
-   },
-   {
-    "name_he": "רבי שמשון הלוי העלר מזבאריז'",
-    "name_en": "R' Shimshon Halevi Heller of Zhbarizh",
-    "year_heb": "5600",
-    "year": "1839",
-    "who": "Rabbi of Zhbarizh",
-    "sources": [
-     {
-      "name": "torahtots.com This Month in Jewish History: 19 Cheshvan",
-      "url": "https://www.torahtots.com/timecapsule/thismonth/cheshvan.htm"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "only one source found"
-   },
-   {
     "name_he": "רבי אליהו ראגלער",
     "name_en": "R' Eliyahu Rogler, Rav of Slobodka and Kalisch",
     "father_en": "Reb Yaakov",
     "year_heb": "5610",
     "year": "1849",
     "who": "Rav of Slobodka and Kalisch, talmid of R' Chaim Volozhiner, authored Shu\"t Yad Eliyahu",
-    "sources": [
-     {
-      "name": "torahtots.com This Month in Jewish History: 19 Cheshvan",
-      "url": "https://www.torahtots.com/timecapsule/thismonth/cheshvan.htm"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "only one source found"
-   },
-   {
-    "name_he": "רבי משה מיכל מביאלא",
-    "name_en": "R' Moshe Michel of Biala",
-    "father_he": "רבי אליעזר פישל משטריזוב",
-    "father_en": "R' Eliezer Fishel of Strizhov",
-    "year_heb": "5615",
-    "year": "1854",
-    "who": "Rav of Biala, chassid of the Chozeh of Lublin and R' Bunim of Peshischa",
     "sources": [
      {
       "name": "torahtots.com This Month in Jewish History: 19 Cheshvan",
@@ -3765,6 +3685,30 @@
     ],
     "origin": "yahrzeit-calendar",
     "why_unconfirmed": "only one source found"
+   },
+   {
+    "name_he": "רבי יוסף יצחק ב\"ר משה גרשון לאנדסבערג, אב\"ד דעסוי",
+    "name_en": "R' Yosef Yitzchak Landsberg, Av Beis Din of Dessau",
+    "father_en": "R' Moshe Gershon",
+    "year_heb": "5496",
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)",
+    "why_unconfirmed": "Monsey Luach only"
+   },
+   {
+    "name_he": "רבי יהושע ב\"ר יהודה הכהן ראפאפארט, אב\"ד ווערפעלעט",
+    "name_en": "R' Yehoshua HaKohen Rapoport, Av Beis Din of Verpelét",
+    "father_en": "R' Yehuda",
+    "year_heb": "5608",
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)",
+    "why_unconfirmed": "Monsey Luach only"
+   },
+   {
+    "name_he": "רבי עקיבא מאיר ב\"ר ישכר דוב הכהן מלוקאווע",
+    "name_en": "R' Akiva Meir HaKohen of Lukova",
+    "father_en": "R' Yissachar Dov",
+    "year_heb": "5680",
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)",
+    "why_unconfirmed": "Israel Heritage Foundation Cheshvan list only"
    }
   ],
   "20-Cheshvan": [
@@ -3795,19 +3739,6 @@
      {
       "name": "he.wikipedia date page כ' בחשוון",
       "url": "https://he.wikipedia.org/wiki/%D7%9B%27_%D7%91%D7%97%D7%A9%D7%95%D7%95%D7%9F"
-     }
-    ],
-    "origin": "yahrzeit-calendar",
-    "why_unconfirmed": "only one source found"
-   },
-   {
-    "name_he": "רבי אברהם בן יצחק מנרבונה",
-    "name_en": "R' Avraham ben Yitzchak of Narbonne, author of Sefer HaEshkol",
-    "who": "Rishon, author of Sefer HaEshkol, father-in-law of the Ravad",
-    "sources": [
-     {
-      "name": "torahtots.com This Month in Jewish History: 20 Cheshvan",
-      "url": "https://www.torahtots.com/timecapsule/thismonth/cheshvan.htm"
      }
     ],
     "origin": "yahrzeit-calendar",

@@ -1,8 +1,8 @@
 {
  "title": "Click613 Gedolim Yahrzeits",
- "imported": "2026-10-29T04:24:01Z",
+ "imported": "2026-10-29T04:36:23Z",
  "note": "Confirmed yahrzeits: each name checked against 2+ independent sources. Keys are Hebrew dates \"<day>-<month>\". \"Adar\" = Adar in a plain year; in a leap year it is kept in Adar I unless \"adar\": \"II\". \"Adar-I\" = 30 Adar I. Add or fix names by pull request (see README).",
- "count": 1592,
+ "count": 1600,
  "dates": {
   "1-Tishrei": [
    {
@@ -6781,6 +6781,18 @@
      {
       "name": "Wikidata / en.wikipedia (Dovid Feinstein): died 2020-11-06",
       "url": "https://www.wikidata.org/wiki/Q5302567"
+     },
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תשפ\"א)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "he.wikipedia date page י\"ט בחשוון + bio דוד פיינשטיין (19 Cheshvan 5781, 6 Nov 2020)",
+      "url": null
+     },
+     {
+      "name": "en.wikipedia / Wikidata Dovid Feinstein (died 6 Nov 2020)",
+      "url": null
      }
     ],
     "origin": "yahrzeit-calendar (he.wikipedia date pages + 2nd source)"
@@ -6806,6 +6818,14 @@
      {
       "name": "Wikidata / en.wikipedia (David Zvi Hoffmann): died 1921-11-20",
       "url": "https://www.wikidata.org/wiki/Q458733"
+     },
+     {
+      "name": "he.wikipedia date page י\"ט בחשוון + bio דוד צבי הופמן (19 Cheshvan 5682, 20 Nov 1921; father R' Moshe, a dayan in Verbó)",
+      "url": null
+     },
+     {
+      "name": "en.wikipedia / Wikidata David Zvi Hoffmann (died 20 Nov 1921)",
+      "url": null
      }
     ],
     "origin": "yahrzeit-calendar (he.wikipedia date pages + 2nd source)",
@@ -6834,6 +6854,18 @@
      {
       "name": "Wikidata / en.wikipedia (Dov Yaffe): died 2017-11-08",
       "url": "https://www.wikidata.org/wiki/Q6892134"
+     },
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תשע\"ח)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "he.wikipedia date page י\"ט בחשוון + bio דב יפה (19 Cheshvan 5778, 8 Nov 2017)",
+      "url": null
+     },
+     {
+      "name": "en.wikipedia / Wikidata Dov Yaffe (died 8 Nov 2017)",
+      "url": null
      }
     ],
     "origin": "yahrzeit-calendar (he.wikipedia date pages + 2nd source)",
@@ -6862,9 +6894,213 @@
      {
       "name": "he.wikipedia article אברהם צבי קמאי / Wikidata: died 1941-11-09",
       "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A6%D7%91%D7%99_%D7%A7%D7%9E%D7%90%D7%99"
+     },
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תש\"ב)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5702/1941)",
+      "url": null
+     },
+     {
+      "name": "he.wikipedia bio אברהם צבי קמאי (19 Cheshvan 5702, 9 Nov 1941)",
+      "url": null
      }
     ],
     "origin": "yahrzeit-calendar (he.wikipedia date pages + 2nd source)"
+   },
+   {
+    "name_he": "רבי נפתלי יצחק סג״ל זצ״ל – בעל נפתלי שבע רצון",
+    "name_en": "R' Naftali Yitzchak Segal",
+    "father_he": "רבי אריה לייב",
+    "father_en": "R' Aryeh Leib",
+    "year_heb": "5316",
+    "year": "1555",
+    "who": "Author of the sefer Naftali Seva Ratzon.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (שט\"ז)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5316/1555)",
+      "url": null
+     },
+     {
+      "name": "yohrtzite.wordpress.com/cheshvan (same list as yom-yomi.com) (שט\"ז)",
+      "url": "https://yohrtzite.wordpress.com/cheshvan"
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי יצחק אברהם וואלערשטיין זצ״ל, אב״ד מינסק",
+    "name_en": "R' Yitzchak Avraham Wallerstein of Minsk",
+    "father_he": "רבי אשר",
+    "father_en": "R' Asher",
+    "year_heb": "5536",
+    "year": "1775",
+    "who": "Av Beis Din of Minsk, a brother of the Shaagas Aryeh.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תקל\"ו)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5536/1775)",
+      "url": null
+     },
+     {
+      "name": "yohrtzite.wordpress.com/cheshvan (same list as yom-yomi.com) (תקל\"ו)",
+      "url": "https://yohrtzite.wordpress.com/cheshvan"
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי שמשון הלוי העלער מזבאריז זצ״ל",
+    "name_en": "R' Shimshon HaLevi Heller of Zbarazh",
+    "father_he": "רבי משולם פייוויש",
+    "father_en": "R' Meshulam Feivish",
+    "year_heb": "5600",
+    "year": "1839",
+    "who": "Rav of Zbarazh (Zbarizh) in Galicia.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (ת\"ר)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5600/1839)",
+      "url": null
+     },
+     {
+      "name": "yohrtzite.wordpress.com/cheshvan (same list as yom-yomi.com) (as 'R' Shimon of Ozeran', ת\"ר)",
+      "url": "https://yohrtzite.wordpress.com/cheshvan"
+     },
+     {
+      "name": "jewishluach.com yahrzeit directory (19 Cheshvan, as R' Shimon ben R' Meshulam Feish HaLevi Heller)",
+      "url": null
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי אליהו רגולר זצ״ל – רבי אליהו מקאליש, בעל יד אליהו",
+    "name_en": "R' Eliyahu Ragoler of Kalisch",
+    "father_he": "רבי יעקב",
+    "father_en": "R' Yaakov",
+    "year_heb": "5610",
+    "year": "1849",
+    "who": "A talmid of R' Chaim of Volozhin; Rav of Ragola, Slobodka and Kalisch, and author of Yad Eliyahu.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תר\"י)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5610/1849; father Reb Yaakov)",
+      "url": null
+     },
+     {
+      "name": "yohrtzite.wordpress.com/cheshvan (same list as yom-yomi.com) (תר\"י)",
+      "url": "https://yohrtzite.wordpress.com/cheshvan"
+     },
+     {
+      "name": "he.wikipedia bio אליהו רגולר (19 Cheshvan 5610)",
+      "url": null
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי משה מיכל מביאלא זצ״ל",
+    "name_en": "R' Moshe Michel of Biala",
+    "father_he": "רבי אליעזר פישל משטריזוב",
+    "father_en": "R' Eliezer Fishel of Strizhov",
+    "year_heb": "5615",
+    "year": "1854",
+    "who": "A chassid of the Chozeh of Lublin and R' Bunim of Peshischa, who became Rav of Biala.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תרט\"ו; father Eliezer Fishel)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "torahtots.com This Month in Jewish History: Cheshvan (19 Cheshvan) [same family as Matzav / chinuch.org] (5615/1854; father Eliezer Fishel of Strizhov)",
+      "url": null
+     },
+     {
+      "name": "yohrtzite.wordpress.com/cheshvan (same list as yom-yomi.com) (תרט\"ו)",
+      "url": "https://yohrtzite.wordpress.com/cheshvan"
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי אהרן אלימלך שניאור זלמן טווערסקי מקרוסנא זצ״ל",
+    "name_en": "R' Aharon Elimelech Shneur Zalman Twersky of Krosna",
+    "father_he": "רבי מרדכי דוב מהורנסטייפל",
+    "father_en": "R' Mordechai Dov of Hornosteipel",
+    "year_heb": "5684",
+    "year": "1923",
+    "who": "Son of the Hornosteipel Rebbe; Rebbe in Ignatovka in Russia and later in Krosna in Galicia.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תרפ\"ד)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "tzefunotwiki.com רבי אהרן אלימלך שניאור זלמן טברסקי (23 Tishrei 5623 – 19 Cheshvan 5684)",
+      "url": null
+     },
+     {
+      "name": "mytzadik.com tzadik id 509 (hilula 19 Cheshvan; father R' Mordechai Dov)",
+      "url": null
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי שלמה זלקינד לנדרס זצ״ל",
+    "name_en": "R' Shlomo Zalkind Landers",
+    "father_he": "רבי חיים",
+    "father_en": "R' Chaim",
+    "year_heb": "5723",
+    "year": "1962",
+    "who": "The first Chief Rabbi of Ramat Gan, for 36 years.",
+    "sources": [
+     {
+      "name": "he.wikipedia date page י\"ט בחשוון + bio שלמה זלקינד לנדרס (19 Cheshvan 5723; father R' Chaim)",
+      "url": null
+     },
+     {
+      "name": "Davar, 18 Nov 1962, obituary (nli.org.il/he/newspapers/dav/1962/11/18/01/article/129; 'בהרב ר' חיים לאנדרס')",
+      "url": "https://nli.org.il/he/newspapers/dav/1962/11/18/01/article/129"
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
+   },
+   {
+    "name_he": "רבי אהרן בערנשטיין זצ״ל, ראש ישיבת חיי עולם",
+    "name_en": "R' Aharon Bernstein",
+    "father_he": "רבי ירוחם פישל",
+    "father_en": "R' Yerucham Fishel",
+    "year_heb": "5755",
+    "year": "1994",
+    "who": "Rosh Yeshiva of Chayei Olam in Yerushalayim and a member of the Moetzes Gedolei HaTorah of Agudas Yisrael.",
+    "sources": [
+     {
+      "name": "Luach Hatzibur Monsey yahrzeit table for 19 Cheshvan (monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf p.4; same list in 2025/11/Issue-7.pdf) (תשנ\"ה; father Yerucham Fishel)",
+      "url": "https://monseyluach.com/wp-content/uploads/2023/11/11-03-23-יט-חשון-online.pdf"
+     },
+     {
+      "name": "he.wikipedia bio אהרן ברנשטיין (רב) (19 Cheshvan 5755, 24 Oct 1994; father R' Yerucham Fishel Yehoshua)",
+      "url": null
+     }
+    ],
+    "origin": "daily KBY yahrzeit list (gedolim-2026-10-30/yahrzeits.json)"
    }
   ],
   "20-Cheshvan": [
