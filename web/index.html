@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Click613 Yahrzeit Calendar</title>
+<meta name="description" content="Click613 Gedolim Yahrzeit Calendar: every confirmed yahrzeit and Jewish history of the day, by Hebrew date.">
+<meta property="og:title" content="Click613 Yahrzeit Calendar">
+<meta property="og:description" content="Gedolim yahrzeits and Jewish history, by Hebrew date. Updated every day.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <img src="assets/logo.png" alt="Click613" class="logo">
+  <div>
+    <h1>Yahrzeit Calendar</h1>
+    <div class="sub">Gedolim yahrzeits &amp; Jewish history by Hebrew date &middot; <span dir="rtl">לוח יארצייטים</span></div>
+  </div>
+</header>
+<nav>
+  <button data-tab="today" class="on">Today</button>
+  <button data-tab="tomorrow">Tomorrow</button>
+  <button data-tab="browse">Browse</button>
+  <button data-tab="search">Search</button>
+  <button data-tab="data">Data &amp; feeds</button>
+</nav>
+<main>
+  <section id="today"></section>
+  <section id="tomorrow" hidden></section>
+  <section id="browse" hidden>
+    <div class="pick">
+      <select id="month"></select>
+      <div id="days" class="days"></div>
+    </div>
+    <div id="browseOut"></div>
+  </section>
+  <section id="search" hidden>
+    <input id="q" type="search" placeholder="Search a name, a sefer, a town, a year (English or עברית)" autocomplete="off">
+    <div id="searchOut" class="muted">Type at least 2 letters.</div>
+  </section>
+  <section id="data" hidden>
+    <h2>Data &amp; feeds</h2>
+    <p>Everything on this calendar is open for any website, screen or app to read. Files update every morning.</p>
+    <ul class="links">
+      <li><a href="api/today.json">api/today.json</a> &mdash; today's Hebrew date, yahrzeits and history</li>
+      <li><a href="api/tomorrow.json">api/tomorrow.json</a> &mdash; tomorrow (the Hebrew date that begins tonight)</li>
+      <li><a href="api/day/" id="dayLink">api/day/&lt;YYYY-MM-DD&gt;.json</a> &mdash; any civil date, about 14 months ahead</li>
+      <li><a href="api/date/15-Cheshvan.json">api/date/&lt;day&gt;-&lt;Month&gt;.json</a> &mdash; one Hebrew date, e.g. 15-Cheshvan, 7-Adar, 14-Adar-II</li>
+      <li><a href="api/all.json">api/all.json</a> &mdash; the full calendar (yahrzeits + history)</li>
+      <li><a href="api/yahrzeits.json">api/yahrzeits.json</a> &middot; <a href="api/history.json">api/history.json</a></li>
+      <li><a href="api/yahrzeits.csv">api/yahrzeits.csv</a> &middot; <a href="api/history.csv">api/history.csv</a> &mdash; for Excel / Sheets</li>
+      <li><a href="api/calendar.ics">api/calendar.ics</a> &mdash; subscribe in Google, Apple or Outlook Calendar</li>
+      <li><a href="api/status.json">api/status.json</a> &mdash; last build time and counts</li>
+    </ul>
+    <p class="muted">Month names: Tishrei, Cheshvan, Kislev, Teves, Shevat, Adar, Adar-I, Adar-II, Nisan, Iyar, Sivan, Tammuz, Av, Elul. The Hebrew date begins at nightfall the evening before the civil date.</p>
+    <p class="muted">Every name is checked against two or more independent sources. Single-source names are kept apart in <a href="api/unconfirmed.json">api/unconfirmed.json</a> and are not shown on the calendar.</p>
+  </section>
+</main>
+<footer>
+  <span>Click613 &middot; 848-480-8677</span>
+  <span id="built" class="muted"></span>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

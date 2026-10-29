@@ -1,0 +1,106 @@
+name: Daily build and deploy
+
+# Rebuilds the calendar every day (today/tomorrow files, day files, .ics) and publishes it to GitHub Pages.
+# Times are UTC. Two early runs cover both EDT and EST, so the files flip right after midnight New York time;
+# the midday run is a safety net. The build itself always uses America/New_York to decide "today".
+on:
+  schedule:
+    - cron: '10 4 * * *'    # 12:10 AM EDT (11:10 PM EST)
+    - cron: '10 5 * * *'    # 12:10 AM EST (1:10 AM EDT)
+    - cron: '0 15 * * *'    # 10/11 AM New York, safety run
+  push:
+    branches: [main]
+    paths: ['data/**', 'scripts/**', 'web/**', 'requirements.txt', '.github/workflows/daily.yml']
+  workflow_dispatch: {}      # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: write             # lets the last step keep this schedule switched on
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check the data files
+        run: python scripts/build.py --check
+      - name: Build the site and API
+        run: python scripts/build.py
+      - name: Sanity check the output
+        run: |
+          test -s site/index.html
+          python - <<'EOF'
+          import json, datetime
+          from zoneinfo import ZoneInfo
+          t = json.load(open('site/api/today.json'))
+          today = datetime.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          assert t['civil_date'] == today, (t['civil_date'], today)
+          s = json.load(open('site/api/status.json'))
+          assert s['counts']['yahrzeits'] > 1000, s['counts']
+          print('OK', t['hebrew_date_en'], t['counts'])
+          EOF
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify the live site
+        run: |
+          sleep 20
+          URL="${{ steps.deployment.outputs.page_url }}"
+          for i in 1 2 3 4 5; do
+            if curl -fsS "${URL}api/today.json" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['civil_date'], d['hebrew_date_en'])"; then exit 0; fi
+            sleep 30
+          done
+          echo "Live site did not answer with today.json"; exit 1
+      - name: Keep the daily schedule switched on
+        # GitHub switches off scheduled workflows in repos with no activity for 60 days; re-enabling resets that.
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/daily.yml/enable" || true
+
+  alert:
+    # Optional extra e-mail. GitHub already e-mails the repo owner when a scheduled run fails
+    # (Settings > Notifications > Actions). This step only runs if the SMTP secrets are set.
+    needs: [build, deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    env:
+      SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+    steps:
+      - name: E-mail the alert
+        if: env.SMTP_SERVER != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          to: ${{ secrets.ALERT_EMAIL_TO }}
+          from: Click613 Yahrzeit Calendar <${{ secrets.SMTP_USERNAME }}>
+          subject: "Yahrzeit calendar build FAILED (${{ github.repository }})"
+          body: |
+            The daily Yahrzeit Calendar build or deploy failed.
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            The site keeps showing the last good build until the next successful run.
