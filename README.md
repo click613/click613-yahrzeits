@@ -5,7 +5,8 @@ Every morning GitHub rebuilds it and publishes it to GitHub Pages: a website peo
 that any website, screen or app (for example the KBY live screen / thelakewoodluach.com) can read whenever it wants.
 
 - Owner: Click613 (GitHub account under admin@click613.com). Chanoch Rosenthal can be added as a collaborator.
-- Live site: `https://<OWNER>.github.io/click613-yahrzeit-calendar/` (replace `<OWNER>` with the GitHub username once the repo exists).
+- Live site: https://click613.github.io/click613-yahrzeits/
+- Repo: https://github.com/click613/click613-yahrzeits
 - Data: about 1,590 confirmed yahrzeits on 351 Hebrew dates and about 600 history events. Every name is checked against two or more independent sources.
 
 ## What is in this repo
@@ -82,7 +83,7 @@ To confirm an unconfirmed name: find a second source, move the entry from `uncon
 
 ## API for Instinct and anyone else
 
-All files are plain static JSON/CSV/ICS on GitHub Pages: no key, no login, CORS open. Base URL: `https://<OWNER>.github.io/click613-yahrzeit-calendar/`
+All files are plain static JSON/CSV/ICS on GitHub Pages: no key, no login, CORS open. Base URL: `https://click613.github.io/click613-yahrzeits/`
 
 | URL | What |
 |---|---|
@@ -111,7 +112,7 @@ A day file looks like:
 ```
 The Hebrew date begins at nightfall the evening before the civil date (`begins_evening_of`). For a screen that switches at nightfall, show `tomorrow.json` after sunset.
 
-Example: `curl -s https://<OWNER>.github.io/click613-yahrzeit-calendar/api/tomorrow.json`
+Example: `curl -s https://click613.github.io/click613-yahrzeits/api/tomorrow.json`
 
 ## Run it on your own computer
 
@@ -150,13 +151,13 @@ GitHub switches off scheduled workflows in a repo with no activity for 60 days; 
 
 No secrets are stored in this repo.
 
-## First-time setup (once)
+## First-time setup (already done Oct 29 2026, kept for reference)
 
-1. Create the repo `click613-yahrzeit-calendar` on the Click613 GitHub account and push this folder to `main`.
+1. Create the repo `click613-yahrzeits` on the Click613 GitHub account and push this folder to `main`.
 2. *Settings -> Pages -> Build and deployment -> Source: **GitHub Actions***.
 3. *Actions* tab -> enable workflows if asked -> **Daily build and deploy -> Run workflow**.
 4. Open the Pages URL; open `api/today.json`.
-5. Optional: *Settings -> Collaborators -> Add people* -> Chanoch. Optional: a custom domain such as `yahrzeits.click613.com` (*Settings -> Pages -> Custom domain*, plus a CNAME record at the DNS provider pointing to `<OWNER>.github.io`).
+5. Optional: *Settings -> Collaborators -> Add people* -> Chanoch. Optional: a custom domain such as `yahrzeits.click613.com` (*Settings -> Pages -> Custom domain*, plus a CNAME record at the DNS provider pointing to `click613.github.io`).
 
 ## Where the data came from
 
